@@ -31,7 +31,7 @@ function Result({ credits, setCredits }) {
       setError("");
       setImage("");
 
-      const res = await fetch("http://localhost:4000/api/image/generate", {
+      const res = await fetch("https://pixforge-backend.onrender.com/api/image/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
